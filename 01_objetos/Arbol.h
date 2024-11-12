@@ -1,3 +1,7 @@
+// Asegurar que el archivo se incluya solo una vez
+#ifndef ARBOL_H
+#define ARBOL_H
+
 #include<iostream>
 
 using namespace std;
@@ -66,17 +70,4 @@ class Arbol {
         }
 };
 
-int main() {
-
-    Arbol abedul;
-    abedul.set_especie("Abedul");
-    abedul.imprime_datos();
-
-    cout << "---------------" << endl;
-
-    Arbol pino = Arbol("pino", 6, 20);
-    pino.imprime_datos();
-    cout << "Ejemplo get: " << pino.get_especie() << endl;
-
-    return 0;
-}
+#endif
