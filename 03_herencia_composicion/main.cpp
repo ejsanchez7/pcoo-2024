@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Figura.h"
+#include "Circulo.h"
 #include "Posicion.h"
 
 using namespace std;
@@ -7,9 +7,9 @@ using namespace std;
 int main(){
 
     Posicion pos = Posicion(12, 56);
-    Figura fig = Figura(90, "#FF0000", pos);
+    Circulo miCirculo = Circulo(5, 90, "#FF0000", pos);
 
-    fig.imprime_datos();
+    miCirculo.imprime_datos();
 
     return 0;
 }
