@@ -48,6 +48,10 @@ class Circulo:public Figura {
         float calcular_area(){
             return M_PI * pow(radio, 2);
         }
+
+        void dibujar(){
+            cout << "Dibujar círculo en posicion (" << posicion.get_x() << ", " << posicion.get_y() << ")";
+        }
 };
 
 #endif

@@ -86,11 +86,15 @@ class Triangulo:public Figura {
         }
 
         float calcular_perimetro(){
-            return 2 * M_PI * radio;
+            return base + lado_a + lado_b;
         }
 
         float calcular_area(){
-            return M_PI * pow(radio, 2);
+            return (base * altura) / 2;
+        }
+
+        void dibujar(){
+            cout << "Dibujar triángulo en posicion (" << posicion.get_x() << ", " << posicion.get_y() << ")";
         }
 };
 

@@ -12,6 +12,7 @@ class Figura{
         Posicion posicion;
         float angulo;
         string color;
+        int id;
 
     public:
         Figura(){
@@ -53,6 +54,10 @@ class Figura{
 
         virtual float calcular_area(){
             return 0;
+        }
+
+        virtual void dibujar(){
+            cout << "Dibujar figura en posicion (" << posicion.get_x() << ", " << posicion.get_y() << ")";
         }
 
 };
